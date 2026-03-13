@@ -1,26 +1,30 @@
 AI Poker Dealer – Real-Time Card Recognition
-Project Overview
-This project is an AI-powered poker dealer that uses computer vision to automatically detect playing cards from a live webcam feed and evaluate the best poker hand in real time.
-It combines YOLO object detection, OpenCV overlays, and a custom poker-hand evaluation algorithm to deliver instant results such as “Full House” or “Straight Flush.”
+Overview
+This project is an AI-powered poker dealer that uses computer vision to recognize playing cards from a live webcam feed and determine the best poker hand in real time. By combining YOLO object detection with OpenCV and a custom hand-evaluation algorithm, the program can detect cards on the table and instantly display results such as Full House, Straight, or Royal Flush.
 Inspiration
-Poker is a fun but sometimes slow game, especially when players manually check hands.
-We wanted to build an AI dealer that can recognize cards instantly, explain hands to new players, and reduce human error — making casual games faster and more engaging.
+Poker is a fun game, but checking hands manually can slow things down, especially for new players who aren’t familiar with the rankings. I built this project to create a simple AI dealer that can recognize cards automatically and evaluate hands instantly. The goal was to make casual games faster and help beginners understand poker hands more easily.
 Tech Stack
-Python – Core development
-YOLO (Ultralytics) – Real-time object detection
-OpenCV and cvzone – Webcam capture, bounding boxes, UI overlays
-Custom Poker Logic – Hand evaluation in Python
+Python – Main programming language
+YOLO (Ultralytics) – Real-time object detection for identifying cards
+OpenCV + cvzone – Webcam input, bounding boxes, and UI overlays
+Custom Poker Logic – Python functions to evaluate the best possible hand
 Features
-Detects 52 unique cards (2–10, J, Q, K, A in all suits)
-Recognizes poker hands: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, etc.
-Real-time detection using a webcam feed
-Displays best hand directly on screeN
+Detects all 52 playing cards (2–10, J, Q, K, A across all suits)
+Identifies poker hands such as:
+Royal Flush
+Straight Flush
+Four of a Kind
+Full House
+Flush
+Straight
+and more
+Processes card detection in real time using a webcam
+Displays the best hand directly on the screen
 How to Run
-Clone the repository:
+1. Clone the repository
 git clone https://github.com/minhquan1105/POKER_HAND_DETECTOR.git
 cd POKER_HAND_DETECTOR
-Install dependencies:
+2. Install dependencies
 pip install ultralytics opencv-python cvzone
-Run the app:
+3. Run the program
 python main.py
-Press q to quit the webcam window.
